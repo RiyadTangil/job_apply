@@ -21,7 +21,6 @@ const useFetch = (endpoint, keyIdx, query) => {
     setIsLoading(true);
 
     try {
-      console.log("useEffect getting");
       const response = await axios.request(options);
 
       setData(response.data.data);
@@ -36,7 +35,7 @@ const useFetch = (endpoint, keyIdx, query) => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   const refetch = () => {
     setIsLoading(true);
