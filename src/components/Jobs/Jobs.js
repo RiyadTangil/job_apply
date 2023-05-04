@@ -309,7 +309,8 @@ const Jobs = () => {
           <JobCard info={info} key={index} />
         ))}
       </div>
-      <div className="btn-group">
+
+      <div className="btn-group flex justify-center ">
         <button onClick={() => handleNext(0)} className="btn">
           «
         </button>
